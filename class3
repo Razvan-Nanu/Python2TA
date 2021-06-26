@@ -1,0 +1,46 @@
+#parent class
+
+class Athlete:
+    Name = 'Lebron James'
+    Contract = 2
+    Position = 'Small Forward'
+    Team = 'Lakers'
+    Player_ID = 23
+#method for athletes only
+def practiceInvite(self):
+    invite_name = input('Enter your name')
+    athlete_password = input("Enter your player ID")
+    if (athlete_password == self.password):
+        print('Practice invite sent {}'.format(invite_name))
+
+#Child class
+class Office(Athlete):
+    Name = 'Frank Vogel'
+    Position = 'Head Coach'
+    Style = 'Defensive'
+    Experience = 10
+    Team = 'Lakers'
+    Office_ID = 12
+#method for changedf for office staff only
+    def practiceInvite(self):
+    invite_name = input('Enter your name')
+    office_password = input("Enter your Office ID")
+    if (office_password == self.password):
+        print('Practice invite sent{}'.format(invite_name))
+
+#Child Class
+class Health(Athlete):
+    Name = 'John Rivers'
+    Position = 'Trainer'
+    Team = 'Lakers'
+    Focus = "shooting'
+    Health_ID = 67
+
+#method for health staff only
+  def practiceInvite(self):
+    invite_name = input('Enter your name')
+    health_password = input("Enter your Health ID")
+    if (health_password == self.password):
+        print('Practice invite sent{}'.format(invite_name))  
+    
+    
